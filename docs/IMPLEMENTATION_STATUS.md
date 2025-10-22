@@ -287,16 +287,21 @@ Health check: PASSING
 | Document | Size | Status | Audience |
 |----------|------|--------|----------|
 | `README.md` | 19KB | ✅ Complete | All users |
-| `ARCHITECTURE.md` | 18KB | ✅ Complete | Developers |
+| `CONCEPTS.md` | 18KB | ✅ Complete | Developers |
 | `API_DOCUMENTATION.md` | 24KB | ✅ Complete | API users |
-| `ADVANCED_USAGE.md` | 19KB | ✅ Complete | Advanced users |
-| `EXAMPLES_GUIDE.md` | 17KB | ✅ Complete | Beginners |
-| `PERFORMANCE_GUIDE.md` | 15KB | ✅ Complete | Performance tuning |
+| `CHATBOT_APPLICATION.md` | 19KB | ✅ Complete | Chatbot developers |
+| `QUICK_REFERENCE.md` | 8KB | ✅ Complete | Quick start |
+| `PROJECT_SUMMARY.md` | 7KB | ✅ Complete | Overview |
 | `PARALLEL_PROCESSING.md` | 9KB | ✅ Complete | Optimization |
 | `PLAIN_ENGLISH_GUIDE.md` | 13KB | ✅ Complete | Non-technical |
 | `DOCKER.md` | 8KB | ✅ Complete | DevOps |
 | `DOCKER_TEST_RESULTS.md` | 6KB | ✅ Complete | Testing |
-| **Total** | **~160KB** | **14 docs** | **All audiences** |
+| `IMPLEMENTATION_STATUS.md` | 15KB | ✅ Complete | Status tracking |
+| `GPU_LLM_INTEGRATION.md` | 30KB | ✅ Complete | LLM integration |
+| `STATE_MANAGEMENT.md` | 15KB | ✅ Complete | Persistence |
+| `AI_MEMORY_COMPARISON.md` | 30KB | ✅ Complete | Research |
+| `TERMINAL_CHAT.md` | 8KB | ✅ Complete | Demo walkthrough |
+| **Total** | **~200KB** | **15 docs** | **All audiences** |
 
 ---
 

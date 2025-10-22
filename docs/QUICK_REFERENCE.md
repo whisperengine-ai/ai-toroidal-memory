@@ -1,6 +1,6 @@
 # Quick Reference: Toroidal Memory for AI
 
-> 📚 **Documentation:** [README](../README.md) | [Plain English Guide](PLAIN_ENGLISH_GUIDE.md) | [Examples](EXAMPLES_GUIDE.md) | [API Docs](API_DOCUMENTATION.md) | [Concepts](CONCEPTS.md)
+> 📚 **Documentation:** [README](../README.md) | [Plain English Guide](PLAIN_ENGLISH_GUIDE.md) | [Terminal Chat](TERMINAL_CHAT.md) | [API Docs](API_DOCUMENTATION.md) | [Concepts](CONCEPTS.md)
 
 ## TL;DR
 

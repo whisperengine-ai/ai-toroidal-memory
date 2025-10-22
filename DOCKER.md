@@ -1,6 +1,6 @@
 # Docker Deployment Guide
 
-> 📚 **Documentation:** [README](README.md) | [API Docs](docs/API_DOCUMENTATION.md) | [Test Results](docs/DOCKER_TEST_RESULTS.md) | [Examples](docs/EXAMPLES_GUIDE.md)
+> 📚 **Documentation:** [README](README.md) | [API Docs](docs/API_DOCUMENTATION.md) | [Test Results](docs/DOCKER_TEST_RESULTS.md) | [Terminal Chat](docs/TERMINAL_CHAT.md)
 
 Run the Toroidal Memory API server in Docker with persistent storage.
 

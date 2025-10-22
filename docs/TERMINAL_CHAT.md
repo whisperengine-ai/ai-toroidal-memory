@@ -252,9 +252,9 @@ See `docs/GPU_LLM_INTEGRATION.md` for LLM integration examples!
 
 ## Learn More
 
-- **[Chatbot Application Guide](../docs/CHATBOT_APPLICATION.md)**: In-depth chatbot concepts
-- **[State Management Guide](../docs/STATE_MANAGEMENT.md)**: Persistence strategies
-- **[GPU & LLM Integration](../docs/GPU_LLM_INTEGRATION.md)**: Production LLM patterns
+- **[Chatbot Application Guide](CHATBOT_APPLICATION.md)**: In-depth chatbot concepts
+- **[State Management Guide](STATE_MANAGEMENT.md)**: Persistence strategies
+- **[GPU & LLM Integration](GPU_LLM_INTEGRATION.md)**: Production LLM patterns
 
 ---
 

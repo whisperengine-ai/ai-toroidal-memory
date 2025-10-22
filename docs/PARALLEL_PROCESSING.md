@@ -1,6 +1,6 @@
 # Parallel Processing Guide
 
-> 📚 **Documentation:** [README](../README.md) | [Performance Guide](PERFORMANCE_GUIDE.md) | [Implementation Status](IMPLEMENTATION_STATUS.md) | [Examples](EXAMPLES_GUIDE.md)
+> 📚 **Documentation:** [README](../README.md) | [Benchmark Example](../examples/benchmark.rs) | [Implementation Status](IMPLEMENTATION_STATUS.md) | [API Docs](API_DOCUMENTATION.md)
 
 This document explains the multi-core parallel processing capabilities in the toroidal memory library.
 

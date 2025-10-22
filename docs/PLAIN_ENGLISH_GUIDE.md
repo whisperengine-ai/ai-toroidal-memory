@@ -1,6 +1,6 @@
 # Toroidal Memory for AI: A Plain English Guide
 
-> 📚 **Documentation:** [README](../README.md) | [Quick Reference](QUICK_REFERENCE.md) | [Examples](EXAMPLES_GUIDE.md) | [Concepts](CONCEPTS.md) | [Try it!](TERMINAL_CHAT.md)
+> 📚 **Documentation:** [README](../README.md) | [Quick Reference](QUICK_REFERENCE.md) | [Terminal Chat](TERMINAL_CHAT.md) | [Concepts](CONCEPTS.md) | [Try it!](TERMINAL_CHAT.md)
 
 *Understanding how donut-shaped memory helps AI systems remember and think*
 

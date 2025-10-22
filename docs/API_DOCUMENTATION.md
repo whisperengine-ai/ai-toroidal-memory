@@ -1,6 +1,6 @@
 # Toroidal Memory REST API Documentation
 
-> 📚 **Documentation:** [README](../README.md) | [Quick Start](QUICK_REFERENCE.md) | [Examples](EXAMPLES_GUIDE.md) | [Docker](../DOCKER.md) | [Implementation Status](IMPLEMENTATION_STATUS.md)
+> 📚 **Documentation:** [README](../README.md) | [Quick Start](QUICK_REFERENCE.md) | [Terminal Chat](TERMINAL_CHAT.md) | [Docker](../DOCKER.md) | [Implementation Status](IMPLEMENTATION_STATUS.md)
 
 Complete HTTP/JSON API for managing toroidal memory instances.
 

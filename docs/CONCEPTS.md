@@ -1,6 +1,6 @@
 # Toroidal Memory for AI: Deep Dive
 
-> 📚 **Documentation:** [README](../README.md) | [Plain English Guide](PLAIN_ENGLISH_GUIDE.md) | [Quick Reference](QUICK_REFERENCE.md) | [Examples](EXAMPLES_GUIDE.md) | [AI Comparison](AI_MEMORY_COMPARISON.md)
+> 📚 **Documentation:** [README](../README.md) | [Plain English Guide](PLAIN_ENGLISH_GUIDE.md) | [Quick Reference](QUICK_REFERENCE.md) | [Terminal Chat](TERMINAL_CHAT.md) | [AI Comparison](AI_MEMORY_COMPARISON.md)
 
 ## What is Toroidal Memory?
 
