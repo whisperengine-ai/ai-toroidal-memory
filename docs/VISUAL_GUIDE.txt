@@ -1,0 +1,250 @@
+```
+UNDERSTANDING TOROIDAL TOPOLOGY
+================================
+
+1. START WITH A RECTANGLE
+   
+   ┌─────────┐
+   │         │
+   │    A    │
+   │         │
+   └─────────┘
+
+
+2. CONNECT LEFT TO RIGHT EDGE (Makes a cylinder)
+
+        ↓
+   ┌─────────┐
+   │    A    │
+   ╰─────────╯
+        ↑
+   
+   Now moving off the right edge brings you back to the left edge!
+
+
+3. CONNECT TOP TO BOTTOM EDGE (Makes a torus/donut)
+
+      ↓─────↑
+      │  A  │
+      ↑─────↓
+   
+   Now moving off the top brings you to the bottom too!
+
+
+4. RESULT: A TORUS (DONUT SHAPE)
+
+                  ╭─────╮
+              ╱───────────╲
+           ╱─────────────────╲
+         ╱───────────────────────╲
+        │      ╭─────────╮        │
+        │   ╱─────────────╲       │
+        │  │               │      │
+        │  │    MEMORY     │      │
+        │  │    SPACE      │      │
+        │   ╲─────────────╱       │
+        │      ╰─────────╯        │
+         ╲───────────────────────╱
+           ╲─────────────────╱
+              ╲───────────╱
+                  ╰─────╯
+
+
+WHY THIS MATTERS FOR AI
+========================
+
+TRADITIONAL GRID:              TOROIDAL GRID:
+┌──────────┐                  No edges! Wraps around
+│ X        │ ← Edge problems   like Pac-Man or Asteroids
+│          │                  
+│     O    │ ← Center OK      Every position is equivalent
+│          │                  
+│        X │ ← Edge problems  No special boundary cases
+└──────────┘                  
+
+Problems with edges:
+- Neural networks behave differently at boundaries
+- Pattern matching breaks at edges  
+- Diffusion/spreading has artifacts
+- Need special-case code everywhere
+
+Toroidal solution:
+- Seamless wrapping
+- Homogeneous space (all positions equal)
+- No boundary conditions needed
+- More elegant mathematics
+
+
+COORDINATE WRAPPING EXAMPLE
+============================
+
+Grid: 10x10 toroidal space
+
+Position (0, 0):  ●─────────┐
+                  │         │
+                  │         │
+                  └─────────┘
+
+Position (-1, -1): Where is this?
+                   It wraps around!
+                   
+                  ┌─────────●  ← Here! (9, 9)
+                  │         │
+                  │         │
+                  └─────────┘
+
+Position (15, 5):  Off the right edge?
+                   15 % 10 = 5
+                   
+                  ┌────●────┐  ← Wraps to (5, 5)
+                  │         │
+                  │         │
+                  └─────────┘
+
+
+MEMORY SPREADING EXAMPLE
+=========================
+
+Time 0: Activate center
+┌─────────┐
+│         │
+│    ●    │  ← Strong activation
+│         │
+└─────────┘
+
+Time 1: Diffusion spreads
+┌─────────┐
+│    ░    │
+│  ░ ▓ ░  │  ← Spreads to neighbors
+│    ░    │
+└─────────┘
+
+Time 2: Continues spreading
+░─────────░  ← Notice: reaches edges!
+│  ░ ▒ ░  │
+│ ░ ▒ ▓ ▒ ░│
+│  ░ ▒ ░  │
+░─────────░  ← And wraps around seamlessly
+
+Time 3: Wraps through torus
+▒░░░─────░░░▒  ← Activation coming from the "back"
+░░ ░░░░░░ ░░   around the torus!
+│ ░░ ▒ ░░ │
+░░ ░░░░░░ ░░
+▒░░░─────░░░▒
+
+
+BIOLOGICAL INSPIRATION
+=======================
+
+The brain has "grid cells" that fire in toroidal patterns!
+
+Grid Cell Activity Map:
+┌─────────┐     ┌─────────┐     ┌─────────┐
+│ ●   ●   │     │   ●   ● │     │ ● ● ● ● │
+│   ●   ● │     │ ●   ●   │     │ ● ● ● ● │
+│ ●   ●   │  +  │   ●   ● │  +  │ ● ● ● ● │  = Unique
+│   ●   ● │     │ ●   ●   │     │ ● ● ● ● │    Position
+└─────────┘     └─────────┘     └─────────┘
+ Scale 1         Scale 2         Scale 3
+
+Multiple toroidal grids at different scales
+= GPS-like positioning system in the brain!
+
+
+AI APPLICATIONS
+===============
+
+1. ROBOT NAVIGATION
+   ┌─────────┐
+   │ 🤖→     │  Robot explores
+   │  ↓      │  Remembers locations
+   │   🎯    │  Finds goals
+   └─────────┘  No edge problems!
+
+2. GAME AI
+   ┌─────────┐
+   │ 👾      │  NPC spatial memory
+   │    🏠   │  Procedural worlds
+   │   👤    │  Seamless boundaries
+   └─────────┘
+
+3. PATTERN LEARNING
+   ┌─────────┐
+   │ A → B   │  Concepts as positions
+   │    ↓    │  Proximity = similarity
+   │    C    │  Diffusion = association
+   └─────────┘
+
+4. ATTENTION MECHANISMS
+   ┌─────────┐
+   │  ░▒▓    │  Focus spreads spatially
+   │  ▒▓█    │  Like neural attention
+   │  ░▒▓    │  But geometrically grounded
+   └─────────┘
+
+
+COMPARISON TO OTHER AI MEMORY
+==============================
+
+Vector Database (FAISS):
+  [0.2, 0.8, 0.1, 0.3, ...]  High-dimensional vectors
+                             Semantic similarity search
+                             ✓ Scalable ✗ No spatial structure
+
+Transformer Attention:
+  Q × K^T → Attention Matrix  Content-based retrieval
+                              ✓ Proven ✗ No explicit space
+
+Toroidal Memory:
+  ┌─────────┐                 Spatial + Continuous
+  │ ░░▒▓█▓▒ │                ✓ Spatial ✓ Dynamic
+  │  ░▒▓█▓▒░│                ✗ Less proven (research!)
+  └─────────┘
+
+
+KEY INSIGHTS
+============
+
+1. Space encodes relationships
+   - Close in space = related concepts
+   - Distance = dissimilarity
+
+2. No boundaries = no edge cases
+   - Simpler code
+   - More uniform behavior
+   - Mathematically elegant
+
+3. Temporal dynamics built-in
+   - Diffusion over time
+   - Memory consolidation
+   - Spreading activation
+
+4. Biologically inspired
+   - Maps to actual brain mechanisms
+   - Grid cells in entorhinal cortex
+   - Spatial navigation system
+
+5. Interpretable and visual
+   - Can literally see memory states
+   - Debug by visualization
+   - Intuitive spatial reasoning
+
+
+TRY IT YOURSELF
+===============
+
+cargo run                        # Basic demo
+cargo run --example advanced     # Complex examples  
+cargo run --example memory_formation  # How memories form
+
+Read the docs:
+- docs/QUICK_REFERENCE.md       # Quick start
+- docs/CONCEPTS.md              # Deep dive
+
+Experiment with parameters:
+- Grid size (resolution vs memory)
+- Diffusion rate (spreading speed)
+- Decay rate (memory persistence)
+- Activation radius (locality)
+```

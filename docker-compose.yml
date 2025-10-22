@@ -1,0 +1,30 @@
+services:
+  toroidal-memory-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: toroidal-memory-api
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - STORAGE_PATH=/data
+      - RUST_LOG=info
+    volumes:
+      # Persistent storage for memory files
+      - toroidal-data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  toroidal-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data

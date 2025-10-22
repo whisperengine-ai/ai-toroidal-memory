@@ -1,0 +1,87 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+
+# Build artifacts
+debug/
+target/
+Cargo.lock
+
+# Generated files from examples
+*.bin
+*.gz
+memory_*.json
+chat_memory_*.json
+*.memory
+*.state
+
+# Docker & persistent data
+data/
+test_api.json
+test_memory.json
+*.db
+
+# Container files (keep Docker configs)
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Testing
+*.test
+test_output/
+*.prof
+
+# Documentation build artifacts
+*.html
+*.css
+!docs/**
+
+# Python (for GPU/ML integration examples)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Backup files
+*~
+*.backup
+*.orig
