@@ -1,6 +1,6 @@
 # GPU Acceleration & LLM Integration Guide
 
-> 📚 **Documentation:** [README](../README.md) | [Chatbot Guide](CHATBOT_APPLICATION.md) | [State Management](STATE_MANAGEMENT.md) | [Parallel Processing](PARALLEL_PROCESSING.md) | [API Docs](API_DOCUMENTATION.md)
+> 📚 **Documentation:** [README](../README.md) | [GPU Implementation](GPU_IMPLEMENTATION.md) | [Chatbot Guide](CHATBOT_APPLICATION.md) | [State Management](STATE_MANAGEMENT.md) | [Parallel Processing](PARALLEL_PROCESSING.md) | [API Docs](API_DOCUMENTATION.md)
 
 *Complete guide to accelerating toroidal memory with GPUs and integrating with Large Language Models*
 

@@ -237,14 +237,16 @@ All memory files are persisted in `./data/` directory.
 ### 💻 Application Guides
 - 💬 **[Chatbot Application](docs/CHATBOT_APPLICATION.md)** - Conversational AI with toroidal memory
 - 💾 **[State Management](docs/STATE_MANAGEMENT.md)** - Persistence, serialization, save/load
+- 🎮 **[Parallel Processing](docs/PARALLEL_PROCESSING.md)** - Multi-core CPU optimization (2-8x speedup)
+- 🚀 **[GPU Implementation](docs/GPU_IMPLEMENTATION.md)** - Apple Silicon GPU acceleration with wgpu/Metal
+- 📊 **[GPU Benchmarking](docs/GPU_BENCHMARKING.md)** - Performance analysis (8-370x speedup results)
 - ⚡ **[GPU & LLM Integration](docs/GPU_LLM_INTEGRATION.md)** - GPU acceleration and prompt generation
 - 🌐 **[API Documentation](docs/API_DOCUMENTATION.md)** - Complete REST API reference (15 endpoints)
-- 🚀 **[Parallel Processing](docs/PARALLEL_PROCESSING.md)** - Multi-core CPU optimization (2-8x speedup)
 
 ### ⚙️ Operations & Deployment
 - 🐳 **[Docker Guide](DOCKER.md)** - Container deployment with docker-compose
 - 🧪 **[Docker Test Results](docs/DOCKER_TEST_RESULTS.md)** - Deployment verification and testing
-- 🔧 **[Parallel Processing](docs/PARALLEL_PROCESSING.md)** - Multi-core CPU optimization (2-8x speedup)
+- � **[Performance Analysis](docs/GPU_BENCHMARKING.md)** - Detailed performance metrics and comparisons
 
 ### 🔬 Research & Comparisons
 - 🔬 **[AI Memory Comparison](docs/AI_MEMORY_COMPARISON.md)** - vs. vector DBs, graphs, transformers, etc.

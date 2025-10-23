@@ -41,7 +41,7 @@ impl PatternMatcher {
     ) -> Vec<(isize, isize)> {
         let mut matches = Vec::new();
         let (mem_width, mem_height) = memory.dimensions();
-        let (pat_width, pat_height) = pattern.dimensions();
+        let (_pat_width, _pat_height) = pattern.dimensions();
 
         for y in 0..mem_height {
             for x in 0..mem_width {
